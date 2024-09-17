@@ -6,10 +6,13 @@ export const config = {
 };
 
 export default async function handler(req: Request) {
+	// console.log('req', req)
+	const url = new URL(req.url)
+	const baseUrl = `${url.protocol}//${url.host}`;
 	// console.log('req.params', req)
 	// console.log('req.body', await req.json())
-	const test = (await axios.get('http://localhost:3000/api/test'))
-	console.log('test', test)
+	const test = (await axios.get(`${baseUrl}/api/test`))
+	console.log('test', test.data)
 	const data = {
 		message: 'Hello world!',
 		greeting: createGreeting('Hector'),
