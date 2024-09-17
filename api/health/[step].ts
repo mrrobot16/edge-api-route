@@ -1,4 +1,4 @@
-// import { createGreeting } from 'lib/utils';
+import { createGreeting } from 'lib/utils';
 // import { createGreetingV2 } from 'lib/utils-v2';
 // import axios from 'axios';
 export const config = {
@@ -11,7 +11,7 @@ export default async function handler(req: Request) {
 	// const test = (await axios.get('http://localhost:3000/api/test'))
 	const data = {
 		message: 'Hello world!',
-		// greeting: createGreeting('Hector'),
+		greeting: createGreeting('Hector'),
 		// greetingV2: createGreetingV2('John'),
 		// test: test.data,
 	};
