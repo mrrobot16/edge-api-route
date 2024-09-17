@@ -1,6 +1,8 @@
+import axios from 'axios';
+
 import { createGreeting } from '@/lib/utils';
 import { createGreetingV2 } from '@/lib/utils-v2';
-import axios from 'axios';
+
 export const config = {
   runtime: 'edge',
 };
