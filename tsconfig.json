@@ -29,8 +29,7 @@
 	"include": [
 		"lib/**/*", // Include everything inside 'src'
 		"api/**/*" // Include the API files in root
-		,
-		"api"],
+	],
 	"exclude": [
 		"node_modules",
 		"**/*.test.ts"
