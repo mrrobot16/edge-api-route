@@ -21,7 +21,7 @@
 		"incremental": true,
 		"baseUrl": "./lib", // This enables absolute imports from 'src'
 		"paths": {
-			"lib/*": [
+			"@/lib/*": [
 				"*"
 			] // Allows '@' to map to anything in 'src'
 		}
