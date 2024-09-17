@@ -8,7 +8,8 @@ export const config = {
 export default async function handler(req: Request) {
 	// console.log('req.params', req)
 	// console.log('req.body', await req.json())
-	// const test = (await axios.get('http://localhost:3000/api/test'))
+	const test = (await axios.get('http://localhost:3000/api/test'))
+	console.log('test', test)
 	const data = {
 		message: 'Hello world!',
 		greeting: createGreeting('Hector'),
