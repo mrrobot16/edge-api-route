@@ -1,3 +1,3 @@
 export default function middleware (req: Request) {
-	console.log('Hello from middleware')
+	console.log(`ENDPOINT: ${req.url}`)
 }
