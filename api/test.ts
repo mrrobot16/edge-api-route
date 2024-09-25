@@ -23,7 +23,6 @@ export default async function handler(req: Request) {
 	const headers = {
 		'Content-Type': 'application/json',
 	};
-
 	return new Response(JSON.stringify(data), { headers });
 }
 
