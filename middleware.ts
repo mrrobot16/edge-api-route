@@ -1,6 +1,6 @@
 import { Instance as Chalk } from 'chalk'
 
-import { verifyAuth } from '@lib/auth'
+import { verifyAuth } from './lib/auth'
 const colors = new Chalk({ level: 1 })
 
 export default function middleware (request: Request) {
